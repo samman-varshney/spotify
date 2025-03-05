@@ -1,0 +1,139 @@
+body {
+    background-color: antiquewhite;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+
+    background-color: black;
+    height: 65px;
+    align-items: center;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0px 0 0 10px;
+    list-style-type: none;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li>img {
+    width: 50px;
+    height: 100%;
+}
+
+nav ul li {
+    padding: 0 50px 0 0;
+
+}
+
+.main {
+    /* min-height: 500px; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 67vh;
+    margin: 30px auto;
+    background-image: url("marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg");
+    background-size: cover;
+    background-position-y: -60px;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    border-radius: 2rem;
+
+
+}
+
+.playbar {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+
+
+}
+
+#progressbar {
+    width: 80vw;
+
+
+}
+
+.playbar i {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.songlist {
+    padding: 20px 0 0 20px;
+}
+
+.songlist ul {
+    padding: 20px;
+
+}
+
+.songlist ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+
+
+.songinfo img {
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.currsong {
+    border: 1px solid orange;
+    border-radius: 40px;
+    background-color: rgb(46, 33, 33);
+    padding-left: 50px;
+}
+
+.inplaybox {
+    /* justify-self: end;
+    align-self: end; */
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.songlist ul li:hover .inplaybox {
+    opacity: 1;
+}
+
+.specialeffect {
+    opacity: 1 !important;
+}
